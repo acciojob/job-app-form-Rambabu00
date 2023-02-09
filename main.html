@@ -7,40 +7,67 @@
 </head>
 
 <body>
-	<form method="get">
-	 <div>
-		<label for="name">Name*</label>
-		 <input type="text" id="name" required>
-	 </div>
-	 <div>
-		<label for="email">Email*</label>
-		 <input type="email" id="email" required>
-	 </div>
-	<div>
-		<label for="gender">Gender*</label>
-		 <input type="radio" id="gender" name="gender" value="Male" required>Male
-		<input type="radio" id="gender"  name="gender" value="Female" required>Female
-	 </div>
-	 <div>
-		<label for="laptop">Laptop Brands</label>
-		 <input type="checkbox" id="laptop">Apple
-		 	 <input type="checkbox" id="laptop">Asus
-		 	 <input type="checkbox" id="laptop">Hp
-	 </div>
-	 <div>
-		<label for="age">Age*</label>
-		 <input type="number" id="age" required>
-	 </div>
-	 <div>
-		<label for="dob">DOB*</label>
-		 <input type="date" id="dob" required>
-	 </div>
-	 <div>
-		<label for="password">Password*</label>
-		 <input type="email" id="password" required>
-	 </div>
-	  <input type="button" value="submit">
-	</form>
+	 
+
+	<form  action="my_form" method="post">
+		<div>
+			<label for="name">Name*</label>
+			<input type="text" id="name" clas="name" placeholder ="Enter your name" required>
+		</div>
+		<br>
+        <div>
+	<lable for="email">Email*</lable>
+	<input type="email" id="email" class="email" placeholder="abcd@gmail.com" required>
+         </div>
+		<br>
+		<div>
+			<label for="gender">Gender*</label>
+			<input type="radio" id="gender" name="gender" class="radio" required>
+			Male
+			
+			<input type="radio" id="gender" name="gender" class="gender" required>
+			Female
+			
+		</div>
+		<br>
+
+		<div>
+			<label for="laptop">Laptop Brands</label>
+			
+			<select name="laptop" id="laptop">
+			<option>Select one of the brands</option>
+				
+			<option>Apple</option>
+			<option>Asus</option>
+			<option>HP</option>
+			</select>
+		</div>
+<br>
+		<div>
+			<lable for="age">Age*</lable>
+			<input type="number" id="age" class="age" placeholder="Enter your age" required>
+		</div>
+		<br>
+
+		<div>
+			<lable for="dob">DOB*</lable>
+			<input type="date" id="dob" class="dob" required>
+			
+		</div>
+		<br>
+		<div>
+			<lable for="password">Password*</lable>
+			<input type="password" id="password"  class="password" placeholder="Enter the password" required>
+		</div>
+		<br>
+		<div>
+			<button id="btn" class="btn" required>submit button</button >
+		</div>
+		<br>
+		<div>
+			<lable for="portfolio">Portfolio*</lable>
+		<input type="url" id="portfolio" class="portfolio" placeholder="http://example.com" required>
+		</div>
 </body>
 
 </html>
