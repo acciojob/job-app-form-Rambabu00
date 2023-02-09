@@ -7,7 +7,11 @@
 </head>
 
 <body>
-	<form  action="my_form" method="post">
+	<form method="post">
+		<div>
+			<label for="portfolio">Portfolio</label>
+<input type="url" id="portfolio" placeholder="https://example.com" required>
+</div>
 		<div>
 			<label for="name">Name</label>
 			<input type="text" id="name" clas="name" placeholder ="Enter your name" required>
@@ -55,11 +59,7 @@
 			<button id="btn" class="btn" required>submit button</button >
 		</div>
 		<br>
-		<div>
-			<lable for="portfolio">Portfolio</lable>
-		<input type="url" id="portfolio" class="portfolio" placeholder="http://example.com" required>
-		</div>
-		</form>
+	</form>
 </body>
 
 </html>
